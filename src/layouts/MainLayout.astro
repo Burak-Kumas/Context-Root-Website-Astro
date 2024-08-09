@@ -1,0 +1,22 @@
+---
+import "../assets/styles/base.css";
+import Header from "../components/Header.astro";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+const { title = "Default Title", description = "Default Description" } = Astro.props as Props;
+---
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description" content={description} />
+  <meta name="generator" content={Astro.generator} />
+  <title>{title}</title>
+</head>
+<body>
+  <Header />
+  <slot>Default Text</slot>
+</body>
