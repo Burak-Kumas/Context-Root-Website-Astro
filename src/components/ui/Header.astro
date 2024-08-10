@@ -1,0 +1,21 @@
+---
+import logoWhite from "../../assets/images/logo-white.svg";
+import logoDark from "../../assets/images/logo-dark.svg";
+import Hamburger from "../icon/Hamburger.astro";
+import ThemeToggle from "./ThemeToggle.astro";
+---
+
+<!-- Header -->
+<header class="sticky inset-x-0 top-4 z-50 flex w-full">
+  <div
+    class="relative flex justify-between w-95 mx-auto items-center px-8 py-2 bg-white/30 backdrop-blur-md dark:bg-night/30 dark:backdrop-blur-md rounded-full">
+    <img class="w-80 dark:hidden" src={logoWhite.src} alt="context root logosu" />
+    <img class="w-80 hidden dark:block" src={logoDark.src} alt="context root logosu" />
+    <div class="flex items-center text-primary-800s dark:text-secondary-300">
+      <span class="flex">
+        <ThemeToggle />
+        <Hamburger />
+      </span>
+    </div>
+  </div>
+</header>

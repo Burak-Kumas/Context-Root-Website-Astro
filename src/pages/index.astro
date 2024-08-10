@@ -4,124 +4,121 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title="Home">
-    <!-- Hero -->
-    <div
-      class="flex flex-col items-center justify-center py-48 sm:w-95 md:w-95 lg:w-[1111px] text-center mx-auto gap-3">
-      <h1 class="lg:tracking-[-6px] font-thin">Context Root empowers global brands with a unique competitive edge.</h1>
-      <p class="text-2xl font-thin py-6">Elevating brands through visionary design and captivating creativity.</p>
-      <button class="rounded-full bg-primary-800 text-white py-4 px-12 font-light">Start Project</button>
-    </div>
+  <!-- Hero -->
+  <div class="flex flex-col items-center justify-center py-48 sm:w-95 md:w-95 lg:w-[1111px] text-center mx-auto gap-3">
+    <h1 class="lg:tracking-[-6px] font-thin">Context Root empowers global brands with a unique competitive edge.</h1>
+    <p class="text-2xl font-thin py-6">Elevating brands through visionary design and captivating creativity.</p>
+    <button class="rounded-full bg-primary-800 py-4 px-12 font-light">Start Project</button>
+  </div>
 
-    <!-- Video&Stats -->
-    <div class="w-95 h-3200 relative mx-auto mt-20 flex">
-      <!--Video-->
-      <div class="w-full sticky md:sticky lg:sticky h-[900px] top-7">
-        <video class="sm:h-[500px] md:h-[700px] lg:h-[900px] h-full w-full object-cover rounded-3xl" src={videoBG}
-        ></video>
-      </div>
-      <!--Stats 1-->
-      <div class="absolute text-white top-[40px] left-[35px]">
-        <h2 class="sm:text-6xl md:text-7xl lg:text-100">350+</h2>
-        <p class="sm:text-2xl md:text-3xl">Projects Completed</p>
-      </div>
-      <!--Stats 2-->
-      <div class="absolute text-white top-[600px] right-[35px]">
-        <h2 class="sm:text-6xl md:text-7xl lg:text-100">320+</h2>
-        <p class="sm:text-2xl md:text-3xl lg:text-3xl">Happy Clients</p>
-      </div>
-      <!--Stats 3-->
-      <div class="absolute text-white top-[1280px] left-[35px]">
-        <h2 class="sm:text-6xl md:text-7xl lg:text-100">14 Years</h2>
-        <p class="sm:text-2xl md:text-3xl">of Experience</p>
-      </div>
-      <!--Stats 4-->
-      <div class="absolute text-white top-[1920px] right-[35px]">
-        <h2 class="sm:text-6xl md:text-7xl lg:text-100">%99,6</h2>
-        <p class="sm:text-2xl md:text-3xl">Positive Feedback</p>
-      </div>
+  <!-- Video&Stats -->
+  <div class="w-95 h-3200 relative mx-auto mt-20 flex">
+    <!--Video-->
+    <div class="w-full sticky md:sticky lg:sticky h-[900px] top-7">
+      <video class="sm:h-[500px] md:h-[700px] lg:h-[900px] h-full w-full object-cover rounded-3xl" src={videoBG}
+      ></video>
     </div>
-    <!-- Services -->
-    <div class="relative w-full pt-12">
-      <div class="w-95 mx-auto">
-        <div class="flex justify-between">
-          <div>
-            <p>Services</p>
-            <h2>Our Services</h2>
-          </div>
-          <div class="content-center justify-end">
-            <button class="rounded-full border-white border-[1px] py-2 px-4 md:px-12 md:py-4">View All Services</button>
-          </div>
+    <!--Stats 1-->
+    <div class="absolute top-[40px] left-[35px]">
+      <h2 class="sm:text-6xl md:text-7xl lg:text-100  ">350+</h2>
+      <p class="sm:text-2xl md:text-3xl">Projects Completed</p>
+    </div>
+    <!--Stats 2-->
+    <div class="absolute top-[600px] right-[35px]">
+      <h2 class="sm:text-6xl md:text-7xl lg:text-100 text-darkest dark:text-white">320+</h2>
+      <p class="sm:text-2xl md:text-3xl lg:text-3xl text-darkest dark:text-white">Happy Clients</p>
+    </div>
+    <!--Stats 3-->
+    <div class="absolute top-[1280px] left-[35px]">
+      <h2 class="sm:text-6xl md:text-7xl lg:text-100">14 Years</h2>
+      <p class="sm:text-2xl md:text-3xl">of Experience</p>
+    </div>
+    <!--Stats 4-->
+    <div class="absolute top-[1920px] right-[35px]">
+      <h2 class="sm:text-6xl md:text-7xl lg:text-100">%99,6</h2>
+      <p class="sm:text-2xl md:text-3xl">Positive Feedback</p>
+    </div>
+  </div>
+  <!-- Services -->
+  <div class="relative w-full pt-12">
+    <div class="w-95 mx-auto">
+      <div class="flex justify-between">
+        <div>
+          <p>Services</p>
+          <h2>Our Services</h2>
         </div>
-        <div class="flex flex-col md:flex-row pt-14 gap-5">
-          <h3 class="w-full md:w-40 text-40">Web and Digital<br />Experience Design</h3>
-          <div class="w-full md:w-60">
-            <h3 class="text-30 md:text-40">
-              Specialized website and digital user experience solutions for crafting intuitive, audience focused
-              interfaces that boost interaction and fulfill your online objectives.
-            </h3>
-            <div class="flex flex-col md:flex-row lg:flex-row gap-3 pt-6">
-              <p class="sm:w-full md:w-1/2">
-                At our esteemed web development company, trust is paramount and we earn it through unwavering excellence
-                and professionalism in every endeavor.
-              </p>
-              <p class="sm:w-full md:w-1/2">
-                Our dedicated team specializes in delivering refined digital experiences, meticulously tailored to meet
-                your unique requirements.
-              </p>
-            </div>
-            <div class="pt-10">
-              <ol class="list-decimal list-inside w-full md:w-1/2 dark:text-white text-black text-20 space-y-5">
-                <li>Web Design & Development</li>
-                <hr />
-                <li>User Interface - User Experience Design (UI - UX)</li>
-                <hr />
-                <li>Front-End Development</li>
-                <hr />
-                <li>Back-End Development</li>
-                <hr />
-                <li>Search Engine Optimization (SEO)</li>
-                <hr />
-                <li>Mobile Application</li>
-                <hr />
-                <li>E-commerce Solutions</li>
-                <hr />
-                <li>Brand Identity</li>
-                <hr />
-                <li>Copywriting</li>
-                <hr />
-              </ol>
-            </div>
-          </div>
+        <div class="content-center justify-end">
+          <button class="rounded-full border-white border-[1px] py-2 px-4 md:px-12 md:py-4">View All Services</button>
         </div>
       </div>
-    </div>
-    <!--About Us-->
-    <div class="relative w-full py-12">
-      <div class="w-95 mx-auto">
-        <div class="flex justify-between"></div>
-        <div class="flex flex-col md:flex-row gap-5">
-          <h3 class="w-full md:w-40 text-40">About Us</h3>
-          <div class="w-full md:w-60">
-            <h3 class="text-30 md:text-40">
-              At Context Root, we endeavor to surpass expectations by creating outstanding digital encounters on diverse
-              platforms.
-            </h3>
-            <div class="flex flex-col md:flex-row lg:flex-row gap-3 pt-6">
-              <p class="sm:w-full md:w-1/2">
-                Dedicated to excelling in the realm of digital creation, Context Root is unwavering in their mission to
-                deliver standout experiences across all devices without faltering in their dedication.
-              </p>
-              <p class="sm:w-full md:w-1/2">
-                Our tenacious goal is to outdo expectations and set unprecedented standards of excellence in every
-                venture we undertake.
-              </p>
-            </div>
+      <div class="flex flex-col md:flex-row pt-14 gap-5">
+        <h3 class="w-full md:w-40 text-40">Web and Digital<br />Experience Design</h3>
+        <div class="w-full md:w-60">
+          <h3 class="text-30 md:text-40">
+            Specialized website and digital user experience solutions for crafting intuitive, audience focused
+            interfaces that boost interaction and fulfill your online objectives.
+          </h3>
+          <div class="flex flex-col md:flex-row lg:flex-row gap-3 pt-6">
+            <p class="sm:w-full md:w-1/2">
+              At our esteemed web development company, trust is paramount and we earn it through unwavering excellence
+              and professionalism in every endeavor.
+            </p>
+            <p class="sm:w-full md:w-1/2">
+              Our dedicated team specializes in delivering refined digital experiences, meticulously tailored to meet
+              your unique requirements.
+            </p>
+          </div>
+          <div class="pt-10">
+            <ol class="list-decimal list-inside w-full md:w-1/2  text-20 space-y-5">
+              <li>Web Design & Development</li>
+              <hr />
+              <li>User Interface - User Experience Design (UI - UX)</li>
+              <hr />
+              <li>Front-End Development</li>
+              <hr />
+              <li>Back-End Development</li>
+              <hr />
+              <li>Search Engine Optimization (SEO)</li>
+              <hr />
+              <li>Mobile Application</li>
+              <hr />
+              <li>E-commerce Solutions</li>
+              <hr />
+              <li>Brand Identity</li>
+              <hr />
+              <li>Copywriting</li>
+              <hr />
+            </ol>
           </div>
         </div>
       </div>
     </div>
-    <!--Footer-->
-    <div></div>
+  </div>
+  <!--About Us-->
+  <div class="relative w-full py-12">
+    <div class="w-95 mx-auto">
+      <div class="flex justify-between"></div>
+      <div class="flex flex-col md:flex-row gap-5">
+        <h3 class="w-full md:w-40 text-40">About Us</h3>
+        <div class="w-full md:w-60">
+          <h3 class="text-30 md:text-40">
+            At Context Root, we endeavor to surpass expectations by creating outstanding digital encounters on diverse
+            platforms.
+          </h3>
+          <div class="flex flex-col md:flex-row lg:flex-row gap-3 pt-6">
+            <p class="sm:w-full md:w-1/2">
+              Dedicated to excelling in the realm of digital creation, Context Root is unwavering in their mission to
+              deliver standout experiences across all devices without faltering in their dedication.
+            </p>
+            <p class="sm:w-full md:w-1/2">
+              Our tenacious goal is to outdo expectations and set unprecedented standards of excellence in every venture
+              we undertake.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Footer-->
+  <div></div>
 </MainLayout>
-  </body>
-</html>

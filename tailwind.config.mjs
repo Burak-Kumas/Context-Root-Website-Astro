@@ -5,7 +5,7 @@ import defaultTheme from "tailwindcss/defaultTheme";
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
-    darkMode: "class",
+    
     container: {
       center: true,
     },
@@ -40,7 +40,7 @@ module.exports = {
           950: "#073445",
         },
 
-        dark: "#121212", // Koyu gri
+        night: "#121212", // Koyu gri
         light: "#F7F7F7", // Beyaz
       },
       width: {
@@ -72,5 +72,6 @@ module.exports = {
       sm: "809px", // Mobil cihazlar (809px ve altı)
     },
   },
+  darkMode: "class",
   plugins: [typographyPlugin],
 };
