@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    @apply antialiased;
+    @apply antialiased box-border;
   }
 
   body {
@@ -19,7 +19,7 @@
   h6,
   p,
   li {
-    @apply text-night dark:text-light;
+    @apply text-night dark:text-light font-light;
   }
 
   h1 {
@@ -41,7 +41,9 @@
     @apply text-base sm:text-lg md:text-xl lg:text-2xl;
   }
 
-  /* Paragraflar için stil */
+  p {
+    @apply text-lg font-thin;
+  }
 
   hr {
     @apply border-t border-gray-200 dark:border-gray-800;
