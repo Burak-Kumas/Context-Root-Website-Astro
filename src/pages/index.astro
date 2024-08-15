@@ -1,16 +1,15 @@
 ---
 import videoBG from "../assets/video/video.mp4";
-import MainLayout from "../layouts/MainLayout.astro";
 import Image1 from "../assets/images/1.webp";
 import Image2 from "../assets/images/2.webp";
 import Image3 from "../assets/images/3.webp";
-import logoDark from "../assets/images/logo-dark.svg";
 import Hero from "../components/ui/Hero.astro";
+import HomeLayout from "../layouts/HomeLayout.astro";
 ---
 
-<MainLayout title="Home">
+<HomeLayout title="Home">
   <!-- Hero -->
-<Hero/>
+  <Hero />
 
   <!-- Video&Stats -->
   <div class="w-95 h-3200 relative mx-auto mt-20 flex">
@@ -119,9 +118,8 @@ import Hero from "../components/ui/Hero.astro";
                 <p class="mb-10">
                   Our tenacious goal is to outdo expectations and set unprecedented standards of excellence in every
                   venture we undertake.
-                  
                 </p>
-                <br>
+                <br />
                 <img class="h-96 w-full object-cover rounded-3xl mb-3" src={Image2.src} alt="" />
                 <img class="h-96 w-full object-cover rounded-3xl" src={Image3.src} alt="" />
               </div>
@@ -131,51 +129,4 @@ import Hero from "../components/ui/Hero.astro";
       </div>
     </div>
   </div>
-  <!--Footer-->
-  <div>
-    <div>
-      <div class="w-95 mx-auto flex justify-between py-12">
-        <div>
-          <img src={logoDark.src} alt="context root logo" />
-        </div>
-        <div>
-          <h6 class="font-semibold text-20">Services</h6>
-          <ul>
-            <li>Web Design</li>
-            <li>Web Development</li>
-            <li>Mobile Application</li>
-            <li>SEO</li>
-          </ul>
-        </div>
-        <div>
-          <h6 class="font-semibold text-20">Company</h6>
-          <ul>
-            <li>About Us</li>
-            <li>Our Team</li>
-            <li>Projects</li>
-            <li>Careers</li>
-          </ul>
-        </div>
-        <div>
-          <h6 class="font-semibold text-20">Legal</h6>
-          <ul>
-            <li>Privacy Policy</li>
-            <li>Terms & Conditions</li>
-            <li>Cookie Policy</li>
-          </ul>
-        </div>
-        <div>
-          <h6 class="font-semibold text-20">Contact</h6>
-          <ul>
-            <li>[email protected]</li>
-            <li>+1 234 567 89 00</li>
-            <li>1234 Street Name, City Name</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="w-95 mx-auto py-6 text-center">
-      <p>© 2024 Context Root. All rights reserved.</p>
-    </div>
-  </div>
-</MainLayout>
+</HomeLayout>

@@ -12,6 +12,16 @@ module.exports = {
       sans: ["Manrope", ...defaultTheme.fontFamily.sans],
     },
     extend: {
+      animation: {
+        "loop-scroll": "loop-scroll 20s linear infinite",
+      },
+      keyframes: {
+        "loop-scroll": {
+          // Keyframes
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
       colors: {
         primary: {
           50: "#f1f0ff",
