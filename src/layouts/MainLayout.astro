@@ -1,6 +1,7 @@
 ---
 import "../assets/styles/base.css";
 import Footer from "../components/ui/Footer.astro";
+import Menu from "../components/ui/Menu.astro";
 import Header from "../components/ui/Header.astro";
 import Title from "../components/ui/Title.astro";
 
@@ -30,8 +31,9 @@ const { title = "Default Title", description = "Default Description" } = Astro.p
   <title>{title}</title>
 </head>
 <body class="m-auto">
+  <Menu />
   <Header />
-  <Title title={title}/>
+  <Title title={title} />
   <slot />
   <Footer />
 </body>

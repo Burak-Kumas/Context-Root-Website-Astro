@@ -1,0 +1,12 @@
+---
+interface Props {
+  number?: number;
+  menuName?: string;
+}
+const { number = 0, menuName = "Default Menu Name" } = Astro.props as Props;
+---
+
+<div class="flex items-center">
+  <p class="pr-2">0{number}.</p>
+  <h3 class="font-thin">{menuName}</h3>
+</div>

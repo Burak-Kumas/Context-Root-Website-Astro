@@ -1,0 +1,21 @@
+---
+import MenuItem from "./MenuItem.astro";
+---
+
+<div
+  class="fixed bg-light dark:bg-night flex justify-between flex-col py-8 px-20 h-full w-full md:w-1/2 lg:w-1/3 top-0 right-0 z-50 text-night dark:text-light">
+  <button class="text-end">Kapat</button>
+  <div class="flex gap-6 flex-col">
+    <MenuItem number={1} menuName="Home" />
+    <MenuItem number={2} menuName="About Us" />
+    <MenuItem number={3} menuName="Services" />
+    <MenuItem number={4} menuName="Contact" />
+  </div>
+  <div>
+    <p class="font-normal text-[16px]">
+      Send an email to <a class="text-primary-800 dark:text-secondary-300" href="mailto:info@contextroot.com">
+        info@contextroot.com</a
+      >
+    </p>
+  </div>
+</div>

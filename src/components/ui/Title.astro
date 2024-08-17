@@ -4,7 +4,7 @@ interface Props {
   image?: string;
 }
 
-const { title = "Default Title" } = Astro.props as Props;
+const { title = "Default Title" } = Astro.props;
 ---
 
 <div class="pt-40 w-95 m-auto">
@@ -27,12 +27,13 @@ const { title = "Default Title" } = Astro.props as Props;
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    const scrollContent = document.querySelector(".scroll-content");
+    const scrollContent = document.querySelector(".scroll-content") as HTMLElement;
     const contentWidth = scrollContent?.scrollWidth;
     let scrollPosition = 0;
 
     function scrollText() {
-      scrollPosition -= 2; // Kaydırma hızını ayarlayın
+      scrollPosition -= 2; 
+      
 
       if (contentWidth && scrollPosition <= -contentWidth / 2) {
         scrollPosition = 0;
