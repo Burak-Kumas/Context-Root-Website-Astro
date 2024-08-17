@@ -2,6 +2,7 @@
 import "../assets/styles/base.css";
 import Footer from "../components/ui/Footer.astro";
 import Header from "../components/ui/Header.astro";
+import Title from "../components/ui/Title.astro";
 
 interface Props {
   title?: string;
@@ -30,6 +31,7 @@ const { title = "Default Title", description = "Default Description" } = Astro.p
 </head>
 <body class="m-auto">
   <Header />
+  <Title title={title}/>
   <slot />
   <Footer />
 </body>

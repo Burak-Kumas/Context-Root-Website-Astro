@@ -1,12 +1,14 @@
 ---
 import logoDark from "../../assets/images/logo-dark.svg";
+import logoWhite from "../../assets/images/logo-white.svg";
 ---
 
 <div>
   <div>
     <div class="w-95 mx-auto flex justify-between py-12">
       <div>
-        <img src={logoDark.src} alt="context root logo" />
+        <img class="dark:hidden" src={logoWhite.src} alt="context root logo" />
+        <img class="hidden dark:block" src={logoDark.src} alt="context root logo" />
       </div>
       <div>
         <h6 class="font-semibold text-20">Services</h6>

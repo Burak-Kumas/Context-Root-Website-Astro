@@ -1,0 +1,47 @@
+---
+interface Props {
+  title?: string;
+  image?: string;
+}
+
+const { title = "Default Title" } = Astro.props as Props;
+---
+
+<div class="pt-40 w-95 m-auto">
+  <h2 class="text-20">{title}</h2>
+  <div class="relative overflow-hidden whitespace-nowrap">
+    <div class="flex scroll-content">
+      <p class="text-8xl leading-[1.6] mr-8">How about you? The whole world is digital.</p>
+      <p class="text-8xl leading-[1.6] mr-8">How about you? The whole world is digital.</p>
+      <p class="text-8xl leading-[1.6] mr-8">How about you? The whole world is digital.</p>
+    </div>
+  </div>
+
+  <div>
+    <h3>
+      Established in 2022, Context Root is your expert company focuses on the development and revitalization of brands.
+      Our primary responsibility involves devising and implementing strategies for brand growth and progression.
+    </h3>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const scrollContent = document.querySelector(".scroll-content");
+    const contentWidth = scrollContent?.scrollWidth;
+    let scrollPosition = 0;
+
+    function scrollText() {
+      scrollPosition -= 2; // Kaydırma hızını ayarlayın
+
+      if (contentWidth && scrollPosition <= -contentWidth / 2) {
+        scrollPosition = 0;
+      }
+
+      scrollContent.style.transform = `translateX(${scrollPosition}px)`;
+      requestAnimationFrame(scrollText);
+    }
+
+    scrollText();
+  });
+</script>
