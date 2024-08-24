@@ -1,0 +1,41 @@
+---
+interface ScrollTextProps {
+  scrollText: string;
+  class: string;
+}
+const { scrollText = "", class: className = "text-8xl" } = Astro.props;
+---
+
+<div class="relative overflow-hidden whitespace-nowrap scroll-container">
+  <div class="flex scroll-content">
+    <p class=`leading-[1.6] mr-8 ${className}`>{scrollText}</p>
+    <p class=`leading-[1.6] mr-8 ${className}`>{scrollText}</p>
+    <p class=`leading-[1.6] mr-8 ${className}`>{scrollText}</p>
+    <p class=`leading-[1.6] mr-8 ${className}`>{scrollText}</p>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const containers = document.querySelectorAll(".scroll-container");
+
+    containers.forEach((container) => {
+      const scrollContent = container.querySelector(".scroll-content") as HTMLElement;
+      const contentWidth = scrollContent?.scrollWidth;
+      let scrollPosition = 0;
+
+      function scrollText() {
+        scrollPosition -= 2;
+
+        if (contentWidth && scrollPosition <= -contentWidth / 2) {
+          scrollPosition = 0;
+        }
+
+        scrollContent.style.transform = `translateX(${scrollPosition}px)`;
+        requestAnimationFrame(scrollText);
+      }
+
+      scrollText();
+    });
+  });
+</script>

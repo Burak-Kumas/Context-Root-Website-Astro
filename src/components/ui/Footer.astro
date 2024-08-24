@@ -1,52 +1,30 @@
 ---
-import logoDark from "../../assets/images/logo-dark.svg";
-import logoWhite from "../../assets/images/logo-white.svg";
+import ScrollText from "./ScrollText.astro";
 ---
 
 <div>
   <div>
-    <div class="w-95 mx-auto flex justify-between py-12">
-      <div>
-        <img class="dark:hidden" src={logoWhite.src} alt="context root logo" />
-        <img class="hidden dark:block" src={logoDark.src} alt="context root logo" />
-      </div>
-      <div>
-        <h6 class="font-semibold text-20">Services</h6>
-        <ul>
-          <li>Web Design</li>
-          <li>Web Development</li>
-          <li>Mobile Application</li>
-          <li>SEO</li>
-        </ul>
-      </div>
-      <div>
-        <h6 class="font-semibold text-20">Company</h6>
-        <ul>
-          <li>About Us</li>
-          <li>Our Team</li>
-          <li>Projects</li>
-          <li>Careers</li>
-        </ul>
-      </div>
-      <div>
-        <h6 class="font-semibold text-20">Legal</h6>
-        <ul>
-          <li>Privacy Policy</li>
-          <li>Terms & Conditions</li>
-          <li>Cookie Policy</li>
-        </ul>
-      </div>
-      <div>
-        <h6 class="font-semibold text-20">Contact</h6>
-        <ul>
-          <li>[email protected]</li>
-          <li>+1 234 567 89 00</li>
-          <li>1234 Street Name, City Name</li>
-        </ul>
-      </div>
+    <div class="mx-auto flex justify-between py-12">
+      <ScrollText scrollText="Context Root Creative Agency " class="text-[160px]" />
     </div>
   </div>
-  <div class="w-95 mx-auto py-6 text-center">
-    <p>© 2024 Context Root. All rights reserved.</p>
+  <div class="relative w-full">
+    <ul class="list-none flex gap-6 mx-auto justify-center text-20 pb-10">
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Services</li>
+      <li>Articles</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+  <div class="w-95 mx-auto py-6 text-center flex justify-between">
+    <div><p>© 2024 Context Root. All rights reserved.</p></div>
+    <div>
+      <ul class="list-none flex gap-6">
+        <li>Privacy Policy</li>
+        <li>Terms & Conditions</li>
+        <li>Cookie Policy</li>
+      </ul>
+    </div>
   </div>
 </div>
