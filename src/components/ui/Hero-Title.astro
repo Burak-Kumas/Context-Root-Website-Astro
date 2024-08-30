@@ -7,7 +7,12 @@ interface Props {
   image?: string;
 }
 
-const { title = "Default Title", scrollText = "", description = "", image = "" } = Astro.props;
+const {
+  title = "Default Title",
+  scrollText = "",
+  description = "",
+  image = "",
+} = Astro.props;
 ---
 
 <div class="pt-40 w-95 m-auto">
@@ -20,5 +25,9 @@ const { title = "Default Title", scrollText = "", description = "", image = "" }
   </div>
 </div>
 <div class="w-95 m-auto mt-6">
-  <img src={image} alt="Image" class="h-[650px] w-full object-cover rounded-lg" />
+  <img
+    src={image}
+    alt="Image"
+    class="h-[650px] w-full object-cover rounded-lg"
+  />
 </div>

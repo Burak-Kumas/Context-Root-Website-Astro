@@ -23,7 +23,9 @@ const { scrollText = "", class: className = "text-8xl" } = Astro.props;
     const containers = document.querySelectorAll(".scroll-container");
 
     containers.forEach((container) => {
-      const scrollContent = container.querySelector(".scroll-content") as HTMLElement;
+      const scrollContent = container.querySelector(
+        ".scroll-content",
+      ) as HTMLElement;
       const contentWidth = scrollContent?.scrollWidth;
       let scrollPosition = 0;
 

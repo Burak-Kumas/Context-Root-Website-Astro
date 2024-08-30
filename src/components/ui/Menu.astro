@@ -4,25 +4,61 @@ import MenuItem from "./MenuItem.astro";
 
 <div
   id="sidebarMenu"
-  class="flex fixed bg-light dark:bg-night justify-between flex-col py-8 px-20 h-full w-full md:w-1/2 lg:w-1/2 top-0 right-0 z-50 text-night dark:text-light">
+  class="flex fixed bg-light dark:bg-night justify-between flex-col py-8 px-20 h-full w-full md:w-1/2 lg:w-1/2 top-0 right-0 z-50 text-night dark:text-light"
+>
   <button id="closeBtn" class="text-end mt-12">CLOSE</button>
   <div class="flex gap-6 flex-col">
     <ul class="w-full md:w-1/2 text-20 space-y-5">
       <li>
-        <MenuItem number={1} menuName="Home" link="/Context-Root-Website-Astro/" />
+        <MenuItem
+          number={1}
+          menuName="Home"
+          link="/Context-Root-Website-Astro/"
+        />
       </li>
-      <li><MenuItem number={2} menuName="About Us" link="/Context-Root-Website-Astro/about" /></li>
       <li>
-        <MenuItem number={3} menuName="Services" link="/Context-Root-Website-Astro/services" />
+        <MenuItem
+          number={2}
+          menuName="About Us"
+          link="/Context-Root-Website-Astro/about"
+        />
       </li>
-      <li><MenuItem number={4} menuName="Articles" link="/Context-Root-Website-Astro/aticles" /></li>
-      <li><MenuItem number={5} menuName="References" link="/Context-Root-Website-Astro/references" /></li>
-      <li><MenuItem number={6} menuName="Contact" link="/Context-Root-Website-Astro/contact" /></li>
+      <li>
+        <MenuItem
+          number={3}
+          menuName="Services"
+          link="/Context-Root-Website-Astro/services"
+        />
+      </li>
+      <li>
+        <MenuItem
+          number={4}
+          menuName="Articles"
+          link="/Context-Root-Website-Astro/aticles"
+        />
+      </li>
+      <li>
+        <MenuItem
+          number={5}
+          menuName="References"
+          link="/Context-Root-Website-Astro/references"
+        />
+      </li>
+      <li>
+        <MenuItem
+          number={6}
+          menuName="Contact"
+          link="/Context-Root-Website-Astro/contact"
+        />
+      </li>
     </ul>
   </div>
   <div>
     <p class="font-normal text-[16px]">
-      Send an email to <a class="text-primary-800 dark:text-secondary-300" href="mailto:info@contextroot.com">
+      Send an email to <a
+        class="text-primary-800 dark:text-secondary-300"
+        href="mailto:info@contextroot.com"
+      >
         info@contextroot.com</a
       >
     </p>

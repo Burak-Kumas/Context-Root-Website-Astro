@@ -4,7 +4,11 @@ interface Props {
   menuName?: string;
   link?: string;
 }
-const { number = 0, menuName = "Default Menu Name", link = "" } = Astro.props as Props;
+const {
+  number = 0,
+  menuName = "Default Menu Name",
+  link = "",
+} = Astro.props as Props;
 ---
 
 <a href={link}>

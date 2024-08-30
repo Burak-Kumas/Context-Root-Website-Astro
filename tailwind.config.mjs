@@ -3,7 +3,10 @@ import typographyPlugin from "@tailwindcss/typography";
 import defaultTheme from "tailwindcss/defaultTheme";
 
 module.exports = {
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,svg,css}", "./public/**/*.html"],
+  content: [
+    "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,svg,css}",
+    "./public/**/*.html",
+  ],
   theme: {
     container: {
       center: true,

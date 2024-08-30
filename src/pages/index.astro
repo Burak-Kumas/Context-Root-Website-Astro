@@ -15,8 +15,17 @@ import HomeLayout from "../layouts/HomeLayout.astro";
   <div class="w-95 h-3200 relative mx-auto mt-20 flex">
     <!--Video-->
     <div class="w-full sticky md:sticky lg:sticky h-[900px] top-7">
-      <video class="sm:h-[500px] md:h-[700px] lg:h-[900px] h-full w-full object-cover rounded-3xl" src={videoBG}
-      ></video>
+      <video autoplay loop muted
+        class="sm:h-[500px] md:h-[700px] lg:h-[900px] h-full w-full object-cover rounded-3xl"
+      >
+        <source src={videoBG} type="video/mp4" />
+        <track
+          src="captions-en.vtt"
+          kind="captions"
+          srclang="en"
+          label="English"
+        />
+      </video>
     </div>
     <!--Stats 1-->
     <div class="absolute top-[40px] left-[35px]">
@@ -26,7 +35,9 @@ import HomeLayout from "../layouts/HomeLayout.astro";
     <!--Stats 2-->
     <div class="absolute top-[600px] right-[35px]">
       <h2 class="sm:text-6xl md:text-7xl lg:text-100 text-light">320+</h2>
-      <p class="sm:text-2xl md:text-3xl lg:text-3xl text-light">Happy Clients</p>
+      <p class="sm:text-2xl md:text-3xl lg:text-3xl text-light">
+        Happy Clients
+      </p>
     </div>
     <!--Stats 3-->
     <div class="absolute top-[1280px] left-[35px]">
@@ -48,28 +59,38 @@ import HomeLayout from "../layouts/HomeLayout.astro";
           <h2>Our Services</h2>
         </div>
         <div class="content-center justify-end">
-          <button class="rounded-full border-light border-[1px] py-2 px-4 md:px-12 md:py-4">View All Services</button>
+          <button
+            class="rounded-full border-light border-[1px] py-2 px-4 md:px-12 md:py-4"
+            >View All Services</button
+          >
         </div>
       </div>
       <div class="flex flex-col md:flex-row pt-14 gap-5">
-        <h3 class="w-full md:w-40 text-40">Web and Digital<br />Experience Design</h3>
+        <h3 class="w-full md:w-40 text-40">
+          Web and Digital<br />Experience Design
+        </h3>
         <div class="w-full md:w-60">
           <h3 class="text-30 md:text-40">
-            Specialized website and digital user experience solutions for crafting intuitive, audience focused
-            interfaces that boost interaction and fulfill your online objectives.
+            Specialized website and digital user experience solutions for
+            crafting intuitive, audience focused interfaces that boost
+            interaction and fulfill your online objectives.
           </h3>
           <div class="flex flex-col md:flex-row lg:flex-row gap-3 pt-6">
             <p class="sm:w-full md:w-1/2">
-              At our esteemed web development company, trust is paramount and we earn it through unwavering excellence
-              and professionalism in every endeavor.
+              At our esteemed web development company, trust is paramount and we
+              earn it through unwavering excellence and professionalism in every
+              endeavor.
             </p>
             <p class="sm:w-full md:w-1/2">
-              Our dedicated team specializes in delivering refined digital experiences, meticulously tailored to meet
-              your unique requirements.
+              Our dedicated team specializes in delivering refined digital
+              experiences, meticulously tailored to meet your unique
+              requirements.
             </p>
           </div>
           <div class="pt-10">
-            <ol class="list-decimal list-inside w-full md:w-1/2 text-20 space-y-5">
+            <ol
+              class="list-decimal list-inside w-full md:w-1/2 text-20 space-y-5"
+            >
               <li>Web Design & Development</li>
               <hr />
               <li>User Interface - User Experience Design (UI - UX)</li>
@@ -103,36 +124,56 @@ import HomeLayout from "../layouts/HomeLayout.astro";
         <div class="w-full md:w-60">
           <div class="w-full">
             <h3>
-              At Context Root, we endeavor to surpass expectations by creating outstanding digital encounters on diverse
-              platforms.
+              At Context Root, we endeavor to surpass expectations by creating
+              outstanding digital encounters on diverse platforms.
             </h3>
             <div class="flex flex-col md:flex-row lg:flex-row gap-3 pt-6">
               <div class="sm:w-full md:w-1/2">
                 <p class="mb-10">
-                  Dedicated to excelling in the realm of digital creation, Context Root is unwavering in its commitment
-                  to delivering exceptional experiences across all devices. Our firm maintains high standards in every
-                  project, ensuring that we stay aligned with evolving technology and dynamic digital trends. We focus
-                  on providing impactful and functional experiences across all platforms, from design to application
-                  development. Attention to detail is paramount in every stage of our work, as we strive to achieve the
-                  highest quality standards. Through our innovative approach and meticulous efforts, we aim to deliver
-                  the best outcomes in digital creation and offer unique solutions that set our clients apart from their
-                  competitors.
+                  Dedicated to excelling in the realm of digital creation,
+                  Context Root is unwavering in its commitment to delivering
+                  exceptional experiences across all devices. Our firm maintains
+                  high standards in every project, ensuring that we stay aligned
+                  with evolving technology and dynamic digital trends. We focus
+                  on providing impactful and functional experiences across all
+                  platforms, from design to application development. Attention
+                  to detail is paramount in every stage of our work, as we
+                  strive to achieve the highest quality standards. Through our
+                  innovative approach and meticulous efforts, we aim to deliver
+                  the best outcomes in digital creation and offer unique
+                  solutions that set our clients apart from their competitors.
                 </p>
-                <img class="h-[780px] w-full object-cover rounded-3xl" src={Image1.src} alt="görsel-1" />
+                <img
+                  class="h-[780px] w-full object-cover rounded-3xl"
+                  src={Image1.src}
+                  alt="görsel-1"
+                />
               </div>
               <div class="sm:w-full md:w-1/2">
                 <p class="mb-10">
-                  Our steadfast goal is to exceed expectations and set unparalleled standards of excellence in every
-                  project. At Context Root, we prioritize high quality and innovation in all our digital endeavors. By
-                  understanding our clients' needs and goals, we aim to provide digital solutions that ensure their
-                  success not only today but also in the future. Each project represents an opportunity for us to add
-                  value and offer the highest standards in the industry. Our pursuit of excellence, combined with our
-                  determination to achieve the best results at every step, ensures that we create a lasting impact in
-                  the digital world.
+                  Our steadfast goal is to exceed expectations and set
+                  unparalleled standards of excellence in every project. At
+                  Context Root, we prioritize high quality and innovation in all
+                  our digital endeavors. By understanding our clients' needs and
+                  goals, we aim to provide digital solutions that ensure their
+                  success not only today but also in the future. Each project
+                  represents an opportunity for us to add value and offer the
+                  highest standards in the industry. Our pursuit of excellence,
+                  combined with our determination to achieve the best results at
+                  every step, ensures that we create a lasting impact in the
+                  digital world.
                 </p>
                 <br />
-                <img class="h-96 w-full object-cover rounded-3xl mb-3" src={Image2.src} alt="" />
-                <img class="h-96 w-full object-cover rounded-3xl" src={Image3.src} alt="" />
+                <img
+                  class="h-96 w-full object-cover rounded-3xl mb-3"
+                  src={Image2.src}
+                  alt=""
+                />
+                <img
+                  class="h-96 w-full object-cover rounded-3xl"
+                  src={Image3.src}
+                  alt=""
+                />
               </div>
             </div>
           </div>

@@ -9,7 +9,11 @@ export default defineConfig({
   outDir: "dist",
   site: "https://burak-kumas.github.io",
   base: "/Context-Root-Website-Astro/",
-  integrations: [tailwind({
-    applyBaseStyles: true
-  }), partytown(), sitemap()]
+  integrations: [
+    tailwind({
+      applyBaseStyles: true,
+    }),
+    partytown(),
+    sitemap(),
+  ],
 });
