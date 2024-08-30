@@ -11,7 +11,7 @@ interface Props {
 }
 const { title = "Default Title", description = "Default Description" } = Astro.props as Props;
 ---
-
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="Content-Language" content="en" />
@@ -36,7 +36,7 @@ const { title = "Default Title", description = "Default Description" } = Astro.p
   <slot />
   <Footer />
 </body>
-
+</html>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const hamburgerBtn = document.getElementById("hamburgerBtn");

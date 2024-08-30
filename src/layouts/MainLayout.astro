@@ -3,21 +3,23 @@ import "../assets/styles/base.css";
 import Footer from "../components/ui/Footer.astro";
 import Menu from "../components/ui/Menu.astro";
 import Header from "../components/ui/Header.astro";
-import Title from "../components/ui/Hero-Title.astro";
+import HeroTitle from "../components/ui/Hero-Title.astro";
 
 interface Props {
   title?: string;
+  metaDescription?: string;
+  scrollText?: string;
   description?: string;
+  image?: string;
 }
-const { title = "Default Title", description = "Default Description" } = Astro.props as Props;
+const { title = "Default Title", metaDescription = "Default Meta Description", description="Default Description",  image="", scrollText=""} = Astro.props as Props;
 ---
-
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="Content-Language" content="en" />
   <meta name="viewport" content="width=device-width" />
-  <meta name="description" content={description} />
-  <meta name="generator" content={Astro.generator} />
+  <meta name="description" content={metaDescription} />
   <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
     if (
@@ -34,10 +36,11 @@ const { title = "Default Title", description = "Default Description" } = Astro.p
 <body class="m-auto">
   <Menu />
   <Header />
+  <HeroTitle title={title}  description={description} image={image} scrollText={scrollText} />
   <slot />
   <Footer />
 </body>
-
+</html>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const hamburgerBtn = document.getElementById("hamburgerBtn");

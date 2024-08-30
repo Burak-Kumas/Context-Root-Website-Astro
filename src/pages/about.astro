@@ -4,13 +4,8 @@ import MainLayout from "../layouts/MainLayout.astro";
 import hero from "../assets/images/hero.jpg";
 ---
 
-<MainLayout title="About Us">
-  <HeroTitle
-    title="About Us"
-    scrollText="The whole world is digital. How about you?"
-    description=`Established in 2022, {Context Root} is your expert company focuses on the development and revitalization of brands. Our primary responsibility involves devising and implementing strategies for brand growth and progression.`
-    image={hero.src}
-  />
+<MainLayout title="About Us", scrollText="The whole world is digital. How about you?", description=`Established in 2022, {Context Root} is your expert company focuses on the development and revitalization of brands. Our primary responsibility involves devising and implementing strategies for brand growth and progression.`,     
+    image={hero.src}>
 
   <!--About Us-->
   <div class="relative w-full py-12">
