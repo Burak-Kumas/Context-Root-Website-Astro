@@ -5,9 +5,11 @@
   :root {
     @apply antialiased box-border;
   }
-
+  html {
+    @apply overflow-x-hidden;
+  }
   body {
-    @apply bg-light text-night dark:bg-night dark:text-white;
+    @apply bg-light text-night dark:bg-night dark:text-white overflow-x-hidden;
   }
 
   h1,
@@ -45,6 +47,6 @@
   }
 
   hr {
-    @apply border-t border-gray-200 dark:border-gray-800;
+    @apply border-gray-200 dark:border-gray-800;
   }
 }

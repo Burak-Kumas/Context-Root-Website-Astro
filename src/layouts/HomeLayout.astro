@@ -19,7 +19,6 @@ const { title = "Default Title", description = "Default Description" } =
     <meta http-equiv="Content-Language" content="en" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
-    <meta name="generator" content={Astro.generator} />
     <script>
       if (
         localStorage.getItem("color-theme") === "dark" ||
@@ -33,7 +32,7 @@ const { title = "Default Title", description = "Default Description" } =
     </script>
     <title>{title}</title>
   </head>
-  <body class="m-auto">
+  <body>
     <Menu />
     <Header />
     <slot />

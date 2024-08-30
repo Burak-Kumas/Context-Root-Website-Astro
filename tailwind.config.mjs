@@ -8,9 +8,6 @@ module.exports = {
     "./public/**/*.html",
   ],
   theme: {
-    container: {
-      center: true,
-    },
     fontFamily: {
       sans: ["Manrope", ...defaultTheme.fontFamily.sans],
     },
@@ -69,9 +66,9 @@ module.exports = {
     },
 
     screens: {
-      lg: "1440px", // Büyük ekranlar (1440px ve üzeri)
-      md: "810px", // Tabletler (810px ile 1439px arasında)
-      sm: "809px", // Mobil cihazlar (809px ve altı)
+      lg: "1440px",
+      md: "810px",
+      sm: "809px",
     },
   },
   darkMode: "class",
