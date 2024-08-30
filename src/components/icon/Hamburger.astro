@@ -6,7 +6,7 @@ interface Props {
 const { id = "" } = Astro.props;
 ---
 
-<button id={id} class="stroke-primary-800 dark:stroke-secondary-300">
+<button id={id} aria-label="Open Menu Button" class="stroke-primary-800 dark:stroke-secondary-300">
   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
     <path fill="none" stroke-linecap="round" d="M3.5 7.5h17M3.5 12h14m-14 4.5h17"></path>
   </svg>
