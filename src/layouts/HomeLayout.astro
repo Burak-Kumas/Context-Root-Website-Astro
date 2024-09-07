@@ -9,8 +9,7 @@ interface Props {
   title?: string;
   description?: string;
 }
-const { title = "Default Title", description = "Default Description" } =
-  Astro.props as Props;
+const { title = "Default Title", description = "Default Description" } = Astro.props as Props;
 ---
 
 <html lang="en">
@@ -22,8 +21,7 @@ const { title = "Default Title", description = "Default Description" } =
     <script>
       if (
         localStorage.getItem("color-theme") === "dark" ||
-        (!("color-theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
+        (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
       ) {
         document.documentElement.classList.add("dark");
       } else {
